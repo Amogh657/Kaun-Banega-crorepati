@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "question": "who is India's pm??",
+    "options": ["A modi", "B trump", "C meloni", "D charles"],
+    "answer": "A"
+  },
+  {
+    "id": 2,
+    "question": "Which gas is the most abundant in Earth's atmosphere?",
+    "options": ["A Oxygen", "B Carbon dioxide", "C Nitrogen", "D Hydrogen"],
+    "answer": "C"
+  },
+  {
+    "id": 3,
+    "question": "Which country is completely surrounded by South Africa?",
+    "options": ["A Lesotho", "B Eswatini", "C Botswana", "D Namibia"],
+    "answer": "A"
+  },
+  {
+    "id": 4,
+    "question": "Which organ in the human body is responsible for producing insulin?",
+    "options": ["A Liver", "B Kidney", "C Pancreas", "D Gallbladder"],
+    "answer": "C"
+  },
+  {
+    "id": 5,
+    "question": "Which island country was formerly known as Ceylon until 1972?",
+    "options": ["A Madagascar", "B Sri Lanka", "C Cyprus", "D Jamaica"],
+    "answer": "B"
+  }
+]
