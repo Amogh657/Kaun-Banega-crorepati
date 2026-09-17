@@ -1,13 +1,12 @@
 import json
 import random
-
 lifelines = [
         '1. 50-50',
         '2. audience poll']
 
 class kbc:
     def __init__(self):
-        with open ("questions.json", "r") as file:
+        with open ("questions.json", "r", encoding="utf-8") as file:
             self.data = json.load(file)
     def score(self,n):
         match(n):
@@ -28,8 +27,11 @@ class kbc:
                 print('next Q for 1 crore')
                 return 5000000
             case 5:
-                print("1 crore")
-                return 10000000
+                print("you won 1 crore")
+                print('congratulations you are a crorepati')
+                print('thank you for playing')    
+                exit()
+                return 10000000                
             case _:
                 print('there is some issue')
 
@@ -61,11 +63,12 @@ class kbc:
                             print(f"{i}: 10%")
                     lifelines.remove('2. audience poll')            
 n=1
+amount=0
 person = kbc()
-with open ("questions.json", "r") as file:
+with open ("questions.json", "r", encoding="utf-8") as file:
     data = json.load(file)
     c=random.choice(data)       
-while(len(data)!=0):
+while(True):
     c=random.choice(data)
     print(f"{n}.{c['question']}")
     for i in c['options']:
@@ -80,5 +83,6 @@ while(len(data)!=0):
         data.remove(c)
         n+=1
     else:
-        print('u lost, the correct answer is',c['answer'],"you won",amount)
+        ind=ord(c['answer'])-65
+        print('You lost, the correct answer is',c['options'][ind],"\nyou won",amount)
         break   
